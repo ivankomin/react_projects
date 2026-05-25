@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-main-bg: #0d0d0d;
+  --color-light-bg: #1a1a1a;
+  --color-accent: #bbff4d;
+  --color-grey: #9e9e9e;
+  --color-body-text: #e6e6e6;
+  --color-lighter-bg: #333333;
+  --color-grey-lighter: #666666;
+  --color-tag-green: #87C360;
+  --font-geist: "Geist", sans-serif;
+  --font-inter: "Red Hat Display", sans-serif;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: .75;
+  --c:no-repeat linear-gradient(#5c5c5c 0 0);
+  background: 
+    var(--c) 0%   100%,
+    var(--c) 50%  100%,
+    var(--c) 100% 100%;
+  background-size: 20% 65%;
+  animation: l8 1s infinite linear;
+}
+@keyframes l8 {
+  16.67% {background-position: 0% 0%  ,50% 100%,100% 100%}
+  33.33% {background-position: 0% 0%  ,50% 0%  ,100% 100%}
+  50%    {background-position: 0% 0%  ,50% 0%  ,100% 0%  }
+  66.67% {background-position: 0% 100%,50% 0%  ,100% 0%  }
+  83.33% {background-position: 0% 100%,50% 100%,100% 0%  }
+}
