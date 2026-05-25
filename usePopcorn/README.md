@@ -1,7 +1,19 @@
 # usePopcorn
 
-Movie library web app. Work in progress :3
+A purely client-side movie library web application designed to search, discover, and track movies.
 
-This is a purely client-side (for now) project i chip away at in my free time for learning purposes, using vite, react and typescript
+This project serves as a practical implementation of modern frontend development concepts. It interfaces with an external movie API to dynamically fetch and display movie data, relying on React's `useEffect` and custom hooks to efficiently manage state and side effects.
 
-Due to the amount of uni work i have to do, this project is currently on hold, but most of the planned functionality has more or less been implemented
+## Tech Stack
+
+* **Core:** React
+* **Language:** TypeScript
+* **Build Tool:** Vite
+* **Styling:** CSS
+
+## Key Features
+
+* **Movie Search:** Fast and responsive search functionality querying an external movie API.
+* **Component Architecture:** Modular React components for a clean and maintainable codebase.
+* **Custom Hooks:** Encapsulated logic for API data fetching and state management to keep components clean.
+* **Responsive State Management:** Efficient handling of UI updates, loading states, and search results.
